@@ -1,8 +1,14 @@
 //root file za CSS
 
+@import "base/variables";
+
+//Load foundation
+@import "base/foundation-settings";
+@import "foundation";
+@include foundation-everything;
+
 //naziv kod komponenti koje se budu importali (_naziv) potrebno je staviti(_) kako bi se reklo da će ti file biti samo korišten za import
 //kod importa nije potrebno postaviti (_)
-@import "base/variables";
 @import "components/navigation";
 @import "components/clock";
 @import "components/controls";
